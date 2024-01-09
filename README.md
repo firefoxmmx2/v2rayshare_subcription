@@ -4,6 +4,10 @@
 
 代码使用python feedparse 、 urllib3、 beautifulsoap4 实现。可以本地运行。
 
-也可以在这里订阅，后面我把actions搞懂了后，会在这里也自动更新内容。
+也可以在这里订阅。
+## v2ray list
+https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/vray_sub.txt
 
-测试push 自动构建
+## clash list
+https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml
+
