@@ -6,7 +6,7 @@ j# This workflow will upload a Python Package using Twine when a release is crea
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: get subscription url
+name: get-subscription-url
 
 on: 
   schedule:
