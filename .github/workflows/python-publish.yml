@@ -2,7 +2,7 @@ name: get subscription url
 
 on: 
   schedule:
-    - cron: '0/3 * * * *'
+    - cron: '26 * * * *'
 
 jobs:
   deploy:
