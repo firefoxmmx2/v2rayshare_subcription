@@ -4,11 +4,10 @@
 
 代码使用python feedparse 、 urllib3、 beautifulsoap4 实现。可以本地运行。
 
-也可以在这里订阅。
+也可以在这里订阅。每天10:39自动更新
 ## v2ray list
 https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/vray_sub.txt
 
 ## clash list
 https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml
 
-tt
