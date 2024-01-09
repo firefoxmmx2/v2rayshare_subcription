@@ -2,7 +2,7 @@ name: get subscription url
 
 on: 
   schedule:
-    - cron: '26 * * * *'
+    - cron: '30 * * * *'
 
 jobs:
   deploy:
@@ -26,6 +26,7 @@ jobs:
         git config user.email github-actions@github.com
         git add subscription
         git commit -m "update subscription"
+        git pull
         git push
    # - name: Publish package
    #   uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
