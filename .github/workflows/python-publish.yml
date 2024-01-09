@@ -1,9 +1,8 @@
 name: get subscription url
 
 on:
-  push:
   schedule:
-    - cron: '39 * * * *'
+    - cron: '39 02 * * *'
 
 jobs:
   deploy:
