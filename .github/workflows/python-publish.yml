@@ -1,4 +1,4 @@
-# This workflow will upload a Python Package using Twine when a release is created
+j# This workflow will upload a Python Package using Twine when a release is created
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries
 
 # This workflow uses actions that are not certified by GitHub.
@@ -6,9 +6,11 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: get-subscription-url
+name: get subscription url
 
-on: [push]
+on: 
+  schedule:
+    - cron: '0/3 * * * *'
 
 jobs:
   deploy:
@@ -24,8 +26,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install bs4 feedparser urllib3
-    - name: download-subscription-url
+    - name: download subscription url
       run: python main.py
+    - name: git push subscription dir
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add subscription
+        git commit -m "update subscription"
+        git push
    # - name: Publish package
    #   uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
    #   with:
