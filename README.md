@@ -11,3 +11,8 @@ https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscr
 ## clash list
 https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml
 
+免翻地址
+## v2ray list
+https://cdn.jsdelivr.net/gh/firefoxmmx2/v2rayshare_subcription/subscription/vray_sub.txt
+## clash list
+https://cdn.jsdelivr.net/gh/firefoxmmx2/v2rayshare_subcription/subscription/clash_sub.yaml
