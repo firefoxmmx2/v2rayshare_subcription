@@ -1,6 +1,7 @@
 import feedparser
 import urllib3
 from bs4 import BeautifulSoup
+import yaml
 
 subscriptionFeedUrl = 'https://v2rayshare.com/feed'
 saveDir = 'subscription'
@@ -30,6 +31,18 @@ def downloadSubscription():
     if clashLink is not None:
         clashSubLinks = getSubscriptionPageHtml(clashLink)
 
+    # clashYaml add autoproxy
+    clashSubLinksYaml = yaml.safe_load(clashSubLinks)
+    clashSubLinksYaml['proxy-groups'][0]['proxies'].insert(0,'♻️ 自动选择')
+    clashSubLinksYaml['proxy-groups'].insert(1,{
+            'name': '♻️ 自动选择',
+            'type': 'url-test',
+            'url': 'http://www.gstatic.com/generate_204',
+            'interval': 300,
+            'proxies': clashSubLinksYaml['proxy-groups'][0]['proxies'][2:-1]
+        })
+
+    clashSubLinks = yaml.dump(clashSubLinksYaml, allow_unicode=True)
     #  write to file
     with open(saveDir+'/'+v2rayFileName, 'w', encoding='utf-8') as f:
         f.write(v2raySubLinks)
