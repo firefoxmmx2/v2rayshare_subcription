@@ -77,22 +77,111 @@ external-controller: 0.0.0.0:9090
 log-level: info
 mixed-port: 7890
 proxies:
-- name: 🇮🇪_IE_爱尔兰
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10847
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇬🇧_GB_英国_1
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.42.93.180
+  skip-cert-verify: true
+  sni: trojan.miwan.co.uk
+  type: trojan
+  udp: true
+- name: 🇺🇸_US_美国
   network: tcp
   password: telegram-id-directvpn
   port: 22222
-  server: 52.49.249.102
+  server: 44.237.40.234
   skip-cert-verify: true
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
-- name: 🇫🇷_FR_法国
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   network: tcp
-  password: telegram-id-directvpn
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10838
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10846
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10845
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇩🇪_DE_德国_1
+  network: tcp
+  password: telegram-id-privatevpns
   port: 22222
-  server: 15.237.201.223
+  server: 18.157.63.148
   skip-cert-verify: false
-  sni: trj.rollingnext.co.uk
+  sni: trojan.miwan.co.uk
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10848
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇬🇧_GB_英国_2
+  network: tcp
+  password: 81dfb458-9a26-486a-a0da-914c380459c6
+  port: 443
+  server: 198.244.190.189
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇩🇪_DE_德国_2
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.156.123.121
+  skip-cert-verify: true
+  sni: trojan.miwan.co.uk
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10837
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: tcp
+  password: f0883703-3161-4d18-b243-4b2ca0647a05
+  port: 10850
+  server: xibaozi.19890604.day
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
 proxy-groups:
@@ -101,21 +190,51 @@ proxy-groups:
   - ♻️ 自动选择
   - ♻️ 自动选择
   - DIRECT
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies:
   - DIRECT
-  - 🇮🇪_IE_爱尔兰
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
   type: url-test
   url: http://www.gstatic.com/generate_204
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -124,29 +243,69 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -169,8 +328,18 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇮🇪_IE_爱尔兰
-  - 🇫🇷_FR_法国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国_1
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇨🇿_CZ_捷克
+  - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+  - 🇩🇪_DE_德国_1
+  - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
+  - 🇬🇧_GB_英国_2
+  - 🇩🇪_DE_德国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: select
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
