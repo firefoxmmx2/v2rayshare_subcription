@@ -46,6 +46,22 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
+  - name: 🇺🇸_US_美国_1
+    type: ss
+    server: 35.86.111.233
+    port: 443
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
+  - name: 🇺🇦_UA_乌克兰_1
+    type: ss
+    server: at1.opensocks.site
+    port: 8388
+    password: ODA2MGZh
+    ip-version: dual
+    udp: true
+    cipher: chacha20-ietf-poly1305
   - name: 🇷🇺_RU_俄罗斯_1
     type: vmess
     server: 185.174.138.199
@@ -62,74 +78,70 @@ proxies:
     udp: true
     alterId: 0
     cipher: auto
-  - name: 🇺🇸_US_美国_1
-    type: ss
-    server: 34.217.73.31
-    port: 443
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国_2
-    type: ss
-    server: 52.24.145.185
-    port: 443
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇫🇷_FR_法国->🇺🇸_US_美国
-    type: trojan
-    server: 15.236.167.194
-    port: 22222
-    password: telegram-id-privatevpns
-    sni: trojan.burgerip.co.uk
-    ip-version: dual
-    udp: true
-  - name: 🇺🇸_US_美国_3
-    type: ss
-    server: 77.83.246.74
-    port: 443
-    password: QiedihFikxn4kCWygMXmFb
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-    type: ss
-    server: 85.90.194.200
-    port: 8080
-    password: d0fa3a9b-2115-4cc0-a8f5-7f4f7caf6ec1
-    ip-version: dual
-    udp: true
-    cipher: chacha20-ietf-poly1305
-  - name: 🇺🇸_US_美国_4
-    type: trojan
-    server: 192.3.130.103
-    port: 443
-    network: grpc
-    password: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
-    sni: us10-02zl.huangshang.filegear-sg.me
-    alpn:
-      - h2
-    client-fingerprint: chrome
-    grpc-opts:
-      grpc-service-name: i8oL7PsxV002zYFTmiIeg
-    ip-version: dual
-    udp: true
-  - name: 🇺🇸_US_美国->🇯🇵_JP_日本
+  - name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
     type: vmess
-    server: 151.101.66.168
-    port: 80
-    uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766
+    server: 45.142.120.190
+    port: 2082
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
     network: ws
+    sni: ''
+    skip-cert-verify: true
     ws-opts:
-      path: /XESALISTHEBEST?ed=2048
+      path: /az05.beyondy.cfd/link#
       headers:
-        host: amd.al
+        host: yellow-paper-029c.yvonna.workers.dev
     ip-version: dual
     udp: true
     alterId: 0
     cipher: auto
+  - name: 🇺🇸_US_美国->🇯🇵_JP_日本
+    type: vmess
+    server: 172.67.202.155
+    port: 2082
+    uuid: 5ce824bc-d76b-4420-aef3-45a7bade5228
+    network: ws
+    sni: ''
+    fingerprint: ''
+    ws-opts:
+      path: /@MEHDIO1
+      headers:
+        host: zoornazanfarsineveshtam.onetwothree123.ir
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 🇺🇸_US_美国_2
+    type: ss
+    server: 34.222.44.5
+    port: 443
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
+  - name: 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+    type: vmess
+    server: 185.174.138.209
+    port: 2095
+    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    network: ws
+    sni: ''
+    skip-cert-verify: true
+    ws-opts:
+      path: /az05.beyondy.cfd/link?/TM
+      headers:
+        host: yellow-paper-029c.yvonna.workers.dev
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: 🇺🇸_US_美国_3
+    type: ss
+    server: 35.91.216.191
+    port: 443
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
   - name: 🇷🇺_RU_俄罗斯_2
     type: vmess
     server: 185.174.138.196
@@ -146,41 +158,17 @@ proxies:
     udp: true
     alterId: 0
     cipher: auto
-  - name: 🇺🇸_US_美国->🇬🇧_GB_英国_1
+  - name: 🇺🇦_UA_乌克兰_2
     type: ss
-    server: 34.222.44.5
-    port: 443
-    password: amazonskr05
+    server: 95.164.36.59
+    port: 8388
+    password: ODA2MGZh
     ip-version: dual
     udp: true
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇬🇧_GB_英国_2
+    cipher: chacha20-ietf-poly1305
+  - name: 🇺🇸_US_美国_4
     type: ss
-    server: 54.200.183.45
-    port: 443
-    password: amazonskr05
-    ip-version: dual
-    udp: true
-    cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯_3
-    type: vmess
-    server: 185.174.138.209
-    port: 2095
-    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-    network: ws
-    sni: ''
-    skip-cert-verify: true
-    ws-opts:
-      path: /az05.beyondy.cfd/link?/TM@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
-      headers:
-        host: yellow-paper-029c.yvonna.workers.dev
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: 🇺🇸_US_美国->🇬🇧_GB_英国_3
-    type: ss
-    server: 54.186.195.135
+    server: 35.87.37.159
     port: 443
     password: amazonskr05
     ip-version: dual
@@ -188,151 +176,153 @@ proxies:
     cipher: aes-256-cfb
   - name: 🇺🇸_US_美国_5
     type: ss
-    server: 35.86.89.247
+    server: 35.91.235.173
     port: 443
     password: amazonskr05
     ip-version: dual
     udp: true
     cipher: aes-256-cfb
-  - name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - name: 🇨🇳_CN_中国
     type: vmess
-    server: 45.142.120.190
-    port: 2082
-    uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+    server: in06.xxxoooxxxooo.net
+    port: 63092
+    uuid: 2ecc00a4-25c3-344e-ae6c-8872b9092e25
     network: ws
     sni: ''
     skip-cert-verify: true
     ws-opts:
-      path: /az05.beyondy.cfd/link#
+      path: /
       headers:
-        host: yellow-paper-029c.yvonna.workers.dev
+        host: de01-cdn.airport-v2.com
     ip-version: dual
     udp: true
     alterId: 0
     cipher: auto
+  - name: 🇺🇸_US_美国_6
+    type: ss
+    server: 35.91.198.93
+    port: 443
+    password: amazonskr05
+    ip-version: dual
+    udp: true
+    cipher: aes-256-cfb
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -355,21 +345,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺_RU_俄罗斯_1
       - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇫🇷_FR_法国->🇺🇸_US_美国
-      - 🇺🇸_US_美国_3
-      - 🇺🇦_UA_乌克兰->🇺🇸_US_美国
-      - 🇺🇸_US_美国_4
+      - 🇺🇦_UA_乌克兰_1
+      - 🇷🇺_RU_俄罗斯_1
+      - 🇳🇱_NL_荷兰->🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇯🇵_JP_日本
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇨🇳_CN_中国
+      - 🇺🇸_US_美国_3
       - 🇷🇺_RU_俄罗斯_2
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_2
-      - 🇷🇺_RU_俄罗斯_3
-      - 🇺🇸_US_美国->🇬🇧_GB_英国_3
+      - 🇺🇦_UA_乌克兰_2
+      - 🇺🇸_US_美国_4
       - 🇺🇸_US_美国_5
-      - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+      - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国_6
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
