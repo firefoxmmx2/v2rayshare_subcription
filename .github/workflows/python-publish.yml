@@ -3,7 +3,12 @@ name: get subscription url
 on:
   schedule:
     - cron: '39 03 * * *'
-
+  workflow_dispatch:         # 允许手动运行
+    inputs:
+      reason:
+        description: '手动部署'
+        required: false
+        default: "Manual trigger
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,7 +31,7 @@ jobs:
         git config user.email github-actions@github.com
         git add subscription
         git commit -m "update subscription"
-        git pull
+        git pull --rebase origin main
         git push
    # - name: Publish package
    #   uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
