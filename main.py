@@ -2,6 +2,7 @@ import feedparser
 import urllib3
 from bs4 import BeautifulSoup
 import yaml
+import os
 
 subscriptionFeedUrl = 'https://v2rayshare.com/feed'
 saveDir = 'subscription'
@@ -23,6 +24,9 @@ def downloadSubscription():
     matchedStartTag = soup.find('h2', string='订阅链接')
     if matchedStartTag is None:
         raise Exception('未找到解析目标')
+
+    if not os.path.exists(saveDir):
+        os.makedirs(saveDir)
 
     v2rayTag = matchedStartTag.findNext('strong', string='v2ray订阅链接:')
     assert v2rayTag is not None
