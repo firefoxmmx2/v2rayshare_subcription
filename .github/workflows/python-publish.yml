@@ -3,10 +3,10 @@ name: get subscription url
 on:
   schedule:
     - cron: '39 03 * * *'
-  workflow_dispatch:         # 允许手动运行
+  workflow_dispatch:
     inputs:
       reason:
-        description: '手动部署'
+        description: 'Manual trigger'
         required: false
         default: "Manual trigger
 jobs:
