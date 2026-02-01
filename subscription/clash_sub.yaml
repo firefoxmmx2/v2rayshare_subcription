@@ -127,6 +127,7 @@ proxies:
     port: 80
     uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
     alterId: 2
+    cipher: auto
     tls: false
     skip-cert-verify: false
     network: ws
@@ -140,6 +141,7 @@ proxies:
     port: 80
     uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
     alterId: 2
+    cipher: auto
     tls: false
     skip-cert-verify: false
     network: ws
