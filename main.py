@@ -51,6 +51,17 @@ def downloadSubscription():
             raise Exception('无法获取clash订阅链接')
         # clashYaml add autoproxy
         clashSubLinksYaml = yaml.safe_load(clashSubLinks)
+
+        # 预处理：为所有代理添加 cipher 字段（如果缺失）
+        if 'proxies' in clashSubLinksYaml:
+            for proxy in clashSubLinksYaml['proxies']:
+                if 'cipher' not in proxy:
+                    proxy_type = proxy.get('type', '').lower()
+                    if proxy_type == 'ss':
+                        proxy['cipher'] = 'aes-256-cfb'
+                    elif proxy_type == 'vmess':
+                        proxy['cipher'] = 'auto'
+
         if not any('自动选择' in proxy for proxy in clashSubLinksYaml['proxy-groups'][0]['proxies']):
             clashSubLinksYaml['proxy-groups'][0]['proxies'].insert(0, '♻️ 自动选择')
             clashSubLinksYaml['proxy-groups'].insert(1, {
